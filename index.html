@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Tic Tac Toe</title>
-	<link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-	<script rel="script" src="app.js"></script>
-</head>
-<body>
+    <head>
+        <title>Tic Tac Toe</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <div class="title">CHOOSE YOUR ANIMAL</div>
 
-			<div class="field">CHOOSE YOUR ANIMAL</div>
-              
-			<canvas id = "canvas1"  width="50" height="50" style="border:1px solid black" ></canvas>
-			<canvas id = "canvas2"  width="50" height="50" style="border:1px solid black" ></canvas>
-			<canvas id = "canvas3"  width="50" height="50" style="border:1px solid black" ></canvas><br/>
-			<canvas id = "canvas4"  width="50" height="50" style="border:1px solid black" ></canvas>
-			<canvas id = "canvas5"  width="50" height="50" style="border:1px solid black" ></canvas>
-			<canvas id = "canvas6"  width="50" height="50" style="border:1px solid black" ></canvas><br/>
-			<canvas id = "canvas7"  width="50" height="50" style="border:1px solid black" ></canvas>
-			<canvas id = "canvas8"  width="50" height="50" style="border:1px solid black" ></canvas>
-			<canvas id = "canvas9"  width="50" height="50" style="border:1px solid black" ></canvas>
-            </div>
+        <div class="wrapper">
 
+            <table>
+                <tr>
+                    <td><div class="tile" id="a"></div></td>
+                    <td><div class="tile" id="b"></div></td>
+                    <td><div class="tile" id="c"></div></td>
+                </tr>
+                <tr>
+                    <td><div class="tile" id="d"></div></td>
+                    <td><div class="tile" id="e"></div></td>
+                    <td><div class="tile" id="f"></div></td>
+                </tr>
+                <tr>    
+                    <td><div class="tile" id="g"></div></td>
+                    <td><div class="tile" id="h"></div></td>
+                    <td><div class="tile" id="i"></div></td>
+                </tr>
+            </table>
 
+        </div>
 
-	
-	<div id="input"></div>
-	
-
-</body>
+        <script rel="script" src="app.js"></script>
+    </body>
 </html>

@@ -1,0 +1,46 @@
+ var boxes = document.getElementsByClassName("tile");
+ console.log(boxes);
+
+var Player1 = "X";
+
+function handlePlayerClick(){
+	if (Player1 == "X"){
+		console.log(Player1);
+		this.innerHTML = "X";
+		Player1 = "O";
+		console.log(Player1);
+	}
+	else { 
+		this.innerHTML= "O";
+		console.log(Player1);
+		Player1 = "X";
+		console.log(Player1);
+	}
+}
+
+//Make the boxes listen for a player's click
+for(i = 0; i < boxes.length; i++){
+	boxes[i].addEventListener("click", handlePlayerClick);
+} 
+
+
+
+
+
+
+	
+
+
+
+
+
+
+//  function input player{
+//  for (i = 0; i < tile.length; i++) 
+//  	return, "" tile, 
+//  }
+
+// var move = document.getElementById("a").addEventListener("click",
+//  function (){ 
+
+// } 	
