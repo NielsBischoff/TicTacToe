@@ -1,22 +1,51 @@
+//represents the individual playing fields
 var boxes = document.getElementsByClassName("tile");
-console.log(boxes);
 
-var Player1 = "X";
+//represents the next move
+var token = "X";
 
-function handlePlayerClick(){
-	console.log("something clicked")
-	if (Player1 == "X"){
-		console.log(Player1);
+//handels click of a box
+function handlePlayerClick(e){
+
+	console.log("handlePlayerClick called")
+
+	//do nothing if box is empty
+	if(e.target.innerHTML != ""){
+		console.log("not empty!")
+		return
+	}
+
+	//display token in box
+	e.target.innerHTML = token
+
+	//record which box and token
+	//check for winner
+		//if no winner
+			//check for tie
+
+	//change to other player
+	if (token === "X"){
+		token = "O";
+	} else { 
+		token = "X"; 
+	}
+
+	/*
+	if (token == "X"){
+		console.log(token);
 		this.innerHTML = "X";
-		Player1 = "O";
-		console.log(Player1);
+		token = "O";
+		console.log(token);
 	}
 	else { 
 		this.innerHTML= "O";
-		console.log(Player1);
-		Player1 = "X";
-		console.log(Player1);
+		console.log(token);
+		token = "X";
+		console.log(token);
 	}
+	*/
+
+
 }
 
 //Make the boxes listen for a player's click
